@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040AED36264C8B5100E7F1C5 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 040AED35264C8B5100E7F1C5 /* Alamofire */; };
 		044B123A264C84C0003533FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044B1239264C84C0003533FC /* AppDelegate.swift */; };
 		044B123C264C84C0003533FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044B123B264C84C0003533FC /* SceneDelegate.swift */; };
 		044B123E264C84C0003533FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044B123D264C84C0003533FC /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		040AED30264C8AC000E7F1C5 /* APIMarvel copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "APIMarvel copy-Info.plist"; path = "/Users/mac/Downloads/APIMarvel/APIMarvel copy-Info.plist"; sourceTree = "<absolute>"; };
 		044B1236264C84BF003533FC /* APIMarvel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APIMarvel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		044B1239264C84C0003533FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		044B123B264C84C0003533FC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				040AED36264C8B5100E7F1C5 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +45,7 @@
 			children = (
 				044B1238264C84C0003533FC /* APIMarvel */,
 				044B1237264C84C0003533FC /* Products */,
+				040AED30264C8AC000E7F1C5 /* APIMarvel copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +87,9 @@
 			dependencies = (
 			);
 			name = APIMarvel;
+			packageProductDependencies = (
+				040AED35264C8B5100E7F1C5 /* Alamofire */,
+			);
 			productName = APIMarvel;
 			productReference = 044B1236264C84BF003533FC /* APIMarvel.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +117,9 @@
 				Base,
 			);
 			mainGroup = 044B122D264C84BF003533FC;
+			packageReferences = (
+				040AED34264C8B5100E7F1C5 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 044B1237264C84C0003533FC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -339,6 +349,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		040AED34264C8B5100E7F1C5 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		040AED35264C8B5100E7F1C5 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 040AED34264C8B5100E7F1C5 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 044B122E264C84BF003533FC /* Project object */;
 }
