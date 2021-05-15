@@ -7,16 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04058FBB26504EFF009AE22F /* Characters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04058FBA26504EFF009AE22F /* Characters.swift */; };
 		040AED36264C8B5100E7F1C5 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 040AED35264C8B5100E7F1C5 /* Alamofire */; };
+		044552D4264EEF6300837E3B /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 044552D3264EEF6300837E3B /* Kingfisher */; };
 		044B123A264C84C0003533FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044B1239264C84C0003533FC /* AppDelegate.swift */; };
 		044B123C264C84C0003533FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044B123B264C84C0003533FC /* SceneDelegate.swift */; };
 		044B123E264C84C0003533FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044B123D264C84C0003533FC /* ViewController.swift */; };
 		044B1241264C84C0003533FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044B123F264C84C0003533FC /* Main.storyboard */; };
 		044B1243264C84C5003533FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 044B1242264C84C5003533FC /* Assets.xcassets */; };
 		044B1246264C84C5003533FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044B1244264C84C5003533FC /* LaunchScreen.storyboard */; };
+		04B52661264DB034009D7DD3 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B52660264DB034009D7DD3 /* APIService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04058FBA26504EFF009AE22F /* Characters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Characters.swift; sourceTree = "<group>"; };
 		040AED30264C8AC000E7F1C5 /* APIMarvel copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "APIMarvel copy-Info.plist"; path = "/Users/mac/Downloads/APIMarvel/APIMarvel copy-Info.plist"; sourceTree = "<absolute>"; };
 		044B1236264C84BF003533FC /* APIMarvel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APIMarvel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		044B1239264C84C0003533FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +30,7 @@
 		044B1242264C84C5003533FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		044B1245264C84C5003533FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		044B1247264C84C5003533FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04B52660264DB034009D7DD3 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				044552D4264EEF6300837E3B /* Kingfisher in Frameworks */,
 				040AED36264C8B5100E7F1C5 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -60,6 +66,7 @@
 		044B1238264C84C0003533FC /* APIMarvel */ = {
 			isa = PBXGroup;
 			children = (
+				04B52657264DAEFF009D7DD3 /* Network */,
 				044B1239264C84C0003533FC /* AppDelegate.swift */,
 				044B123B264C84C0003533FC /* SceneDelegate.swift */,
 				044B123D264C84C0003533FC /* ViewController.swift */,
@@ -69,6 +76,15 @@
 				044B1247264C84C5003533FC /* Info.plist */,
 			);
 			path = APIMarvel;
+			sourceTree = "<group>";
+		};
+		04B52657264DAEFF009D7DD3 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				04B52660264DB034009D7DD3 /* APIService.swift */,
+				04058FBA26504EFF009AE22F /* Characters.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -89,6 +105,7 @@
 			name = APIMarvel;
 			packageProductDependencies = (
 				040AED35264C8B5100E7F1C5 /* Alamofire */,
+				044552D3264EEF6300837E3B /* Kingfisher */,
 			);
 			productName = APIMarvel;
 			productReference = 044B1236264C84BF003533FC /* APIMarvel.app */;
@@ -119,6 +136,7 @@
 			mainGroup = 044B122D264C84BF003533FC;
 			packageReferences = (
 				040AED34264C8B5100E7F1C5 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				044552D2264EEF6300837E3B /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 044B1237264C84C0003533FC /* Products */;
 			projectDirPath = "";
@@ -149,7 +167,9 @@
 			files = (
 				044B123E264C84C0003533FC /* ViewController.swift in Sources */,
 				044B123A264C84C0003533FC /* AppDelegate.swift in Sources */,
+				04B52661264DB034009D7DD3 /* APIService.swift in Sources */,
 				044B123C264C84C0003533FC /* SceneDelegate.swift in Sources */,
+				04058FBB26504EFF009AE22F /* Characters.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +379,14 @@
 				minimumVersion = 5.4.3;
 			};
 		};
+		044552D2264EEF6300837E3B /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.3.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -366,6 +394,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 040AED34264C8B5100E7F1C5 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		044552D3264EEF6300837E3B /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 044552D2264EEF6300837E3B /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
